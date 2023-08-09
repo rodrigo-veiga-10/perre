@@ -21,7 +21,7 @@
 
 <script>
 function fetchTemperature() {
-  fetch('http://192.168.1.104:80/temperatura')
+  fetch('http://perre-server.duckdns.org/temperatura')
     .then(response => response.json())
     .then(data => {
       const temperatura = data.temperatura;
