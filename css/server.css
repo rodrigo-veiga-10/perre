@@ -1,0 +1,21 @@
+.navbar_cima{
+    background-color: #b7b7b7;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: font-size 0.5s;
+
+}
+a:hover{
+    font-size: 18px;
+}
