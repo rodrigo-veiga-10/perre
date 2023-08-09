@@ -21,7 +21,7 @@
 
 <script>
 function fetchTemperature() {
-  fetch('http://perre-server.duckdns.org/temperatura')
+  fetch('http://perre-server.duckdns.org:80/temperatura')
     .then(response => response.json())
     .then(data => {
       const temperatura = data.temperatura;
