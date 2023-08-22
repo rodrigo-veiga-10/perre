@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <nav class="navbar_cima">
@@ -18,31 +19,4 @@
         <h1 class="dashboard"></h1>
     </div>
 </body>
-
-<script>
-function fetchTemperature() {
-  fetch('http://192.168.1.199:5000/temperatura')
-    .then(response => response.json())
-    .then(data => {
-      const temperatura = data.temperatura;
-      console.log('Temperatura:', temperatura);
-      document.querySelector('h1').textContent = 'Temperatura atual: ' + temperatura + ' °C';
-    })
-    .catch(error => {
-      console.error('Erro ao obter temperatura:', error);
-      document.querySelector('h1').textContent = 'Erro';
-    });
-}
-
-setInterval(fetchTemperature, 1000);
-</script>
-
-
-
-
-
-
-
-
-</script>
 </html>
