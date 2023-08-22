@@ -2,7 +2,7 @@ function fetchTemperature() {
     fetch('http://192.168.1.199:5000/temperatura')
       .then(response => response.json())
       .then(data => {
-        const temperatura = data.temperatura;
+        const temperatura = data.temperatura.toFixed(2);
         console.log('Temperatura:', temperatura);
         document.querySelector('h1').textContent = 'Temperatura atual: ' + temperatura + ' °C';
       })
@@ -11,5 +11,8 @@ function fetchTemperature() {
         document.querySelector('h1').textContent = 'Erro';
       });
   }
+
+  const storedRefreshInterval = localStorage.getItem('refresh');
+  const refreshInterval = storedRefreshInterval ? storedRefreshInterval : 1;
+  setInterval(fetchTemperature, refreshInterval * 1000);
   
-  setInterval(fetchTemperature, 1000);

@@ -22,7 +22,6 @@ li {
 
 li img {
     height: 40px;
-    margin-right: 1000px;
 }
 
 li a {
@@ -43,7 +42,7 @@ li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* adjust as needed */
+    height: 80vh;
   }
   
   .dashboard {
