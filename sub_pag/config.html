@@ -11,11 +11,17 @@
         <a href="../index.html">Voltar</a>
     </nav>
     <div class="config_container">
-        <form class="form_config">  
+        <form class="form_config_refresh">  
             <label> Tempo de atualização de temperatura</label>  
-            <input type="number" name="num" min="1" max="1000">  
+            <input type="number" name="refresh" min="1" max="1000">  
              <input type="submit">
              <h3 id="refresh_display_txt">O tempo de atualização está a: </h3>
+        </form>
+        <form class="form_config_decimal">  
+            <label>Casas decimais da temperatura</label>  
+            <input type="number" name="decimal" min="1" max="4">  
+             <input type="submit">
+             <h3 id="decimal_display_txt">O número de casas decimais está a:</h3>
         </form>
     </div>
 </body>

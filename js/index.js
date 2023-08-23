@@ -2,7 +2,7 @@ function fetchTemperature() {
     fetch('http://192.168.1.199:5000/temperatura')
       .then(response => response.json())
       .then(data => {
-        const temperatura = data.temperatura.toFixed(2);
+        const temperatura = data.temperatura.toFixed(localStorage.getItem('decimal'));
         console.log('Temperatura:', temperatura);
         document.querySelector('h1').textContent = 'Temperatura atual: ' + temperatura + ' °C';
       })
