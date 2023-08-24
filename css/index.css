@@ -1,72 +1,53 @@
 .navbar_cima {
-    background-color: #b7b7b7;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 25px;
+  background-color: #b7b7b7;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 li {
-    margin-left: 15px; /* Espaço entre os links */
+  margin-left: 15px; /* Espaço entre os links */
 }
 
-
 li img {
-    height: 40px;
+  height: 40px;
 }
 
 li a {
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-    transition: font-size 0.5s;
-
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: font-size 0.5s;
 }
 
 li a:hover {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-  }
-  
-  .dashboard {
-    font-family: 'Arial', sans-serif;
-    font-size: 50px;
-    color: #ffffff;
-    background-color: #333333;
-    padding: 20px;
-    border-radius: 10px;
-    transition: background-color 2s ease;
-    transition: font-size 2s ease;
-  }
-  
-  
-  
-  
-  
-  .dashboard:hover {
-    background-color: #555555;
-    font-size: 70px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
 
-  
-
-
-
+.dashboard {
+  font-family: "Arial", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+}
