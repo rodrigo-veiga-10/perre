@@ -15,4 +15,14 @@ function fetchTemperature() {
   const storedRefreshInterval = localStorage.getItem('refresh');
   const refreshInterval = storedRefreshInterval ? storedRefreshInterval : 1;
   setInterval(fetchTemperature, refreshInterval * 1000);
+
+
+function openDialog() {
+  var dialog = document.getElementById('versao');
+  dialog.showModal();
+}
+function closeDialog() {
+  var dialog = document.getElementById('versao');
+  dialog.close();
+}
   

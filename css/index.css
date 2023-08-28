@@ -51,3 +51,32 @@ li a:hover {
   padding: 20px;
   border-radius: 10px;
 }
+
+#openDialog_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+#closeDialog_button {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 12px;
+}
+#versao {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 12px;
+}
