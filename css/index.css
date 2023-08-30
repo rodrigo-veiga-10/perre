@@ -44,6 +44,21 @@ li a:hover {
   align-items: center;
   height: 80vh;
 }
+.container_welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome_name {
+  font-family: "Arial", sans-serif;
+  width: 200px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 
 /* Dashboard Styles */
 .dashboard {
@@ -90,3 +105,37 @@ li a:hover {
   padding: 10px;
   border-radius: 12px;
 }
+#welcome_dialog{
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 12px;
+}
+/* Change name configuration styles */
+#name_input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#changeName_button {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 12px;
+    transition: scale 1s;
+    cursor: pointer;
+}
+
+#changeName_button:hover {
+    transform: scale(1.05);
+}
+

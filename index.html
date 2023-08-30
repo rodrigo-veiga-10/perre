@@ -16,6 +16,17 @@
             <li><a href="sub_pag/server.html">Server</a></li>
         </ul>
     </nav>
+    <div class="container_welcome">
+        <h1 id="welcome_name">Bem-vindo, </h1>
+        <dialog id="welcome_dialog">
+            <h1>O teu nome</h1>
+            <input type="text" id="name_input" placeholder="Insere o teu nome">
+            <button onclick="changeName()" id="changeName_button">Alterar Nome</button>
+            <br>
+            <button onclick="closeDialog_welcome()" id="closeDialog_welcome">Fechar</button>
+        </dialog>
+        
+    </div>
     <div class="container">
         <h1 class="dashboard"></h1>
     </div>
@@ -23,8 +34,8 @@
     <button onclick="openDialog()" id="openDialog_button">Versão</button>
 
     <dialog id="versao">
-        <h2>Versão 0.2.6</h2>
-        <h4>Novidades: <br> - Novidade no estilo do site</h4>
+        <h2>Versão 0.2.7</h2>
+        <h4>Novidades: <br> - O teu nome aparece no dasboard</h4>
         <button onclick="closeDialog()" id="closeDialog_button">Fechar</button>
     </dialog>
 </body>
