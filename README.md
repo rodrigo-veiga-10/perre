@@ -7,4 +7,3 @@
     Index - Página inicial do site com dashboard
     Configurações - Página com configurações do site
     Server - informações sobre servidor
-## Data - 24/08/2023
