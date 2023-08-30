@@ -19,3 +19,8 @@ a {
 a:hover{
     font-size: 18px;
 }
+
+.container_server{
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
