@@ -1,4 +1,5 @@
-.navbar_cima{
+/* Navbar styles */
+.navbar_cima {
     background-color: #b7b7b7;
     height: 50px;
     display: flex;
@@ -7,6 +8,7 @@
     border-radius: 25px;
 }
 
+/* Link styles */
 a {
     display: block;
     color: rgb(0, 0, 0);
@@ -14,13 +16,14 @@ a {
     padding: 15px 20px;
     text-decoration: none;
     transition: font-size 0.5s;
-
 }
-a:hover{
+
+a:hover {
     font-size: 18px;
 }
 
-.config_container{
+/* Configuration container styles */
+.config_container {
     display: flex;
     background-color: #e2e2e2;
     border-radius: 50px;
@@ -30,8 +33,46 @@ a:hover{
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
-.form_config_refresh, .form_config_decimal{
-    width: 420px;
-    margin-top: 30px;
+
+/* Configuration form styles */
+.form_config_refresh,
+.form_config_decimal {
     margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 25px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* Configuration button styles */
+.button_config {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 5px;
+    border-radius: 12px;
+    transition: scale 1s;
+}
+
+.button_config:hover {
+    scale: 1.05;
+}
+
+/* Display text styles */
+#refresh_display_txt,
+#decimal_display_txt {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 20px;
 }

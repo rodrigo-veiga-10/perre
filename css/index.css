@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .navbar_cima {
   background-color: #b7b7b7;
   height: 50px;
@@ -29,13 +30,14 @@ li a {
   text-align: center;
   padding: 15px 20px;
   text-decoration: none;
-  transition: font-size 0.5s;
+  transition: scale 1s;
 }
 
 li a:hover {
-  font-size: 18px;
+  scale: 1.15;
 }
 
+/* Container Styles */
 .container {
   display: flex;
   justify-content: center;
@@ -43,6 +45,7 @@ li a:hover {
   height: 80vh;
 }
 
+/* Dashboard Styles */
 .dashboard {
   font-family: "Arial", sans-serif;
   font-size: 50px;
@@ -52,6 +55,7 @@ li a:hover {
   border-radius: 10px;
 }
 
+/* Buttons Styles */
 #openDialog_button {
   position: fixed;
   bottom: 20px;
@@ -62,6 +66,11 @@ li a:hover {
   background-color: #333333;
   padding: 10px;
   border-radius: 12px;
+  transition: scale 1s;
+}
+
+#openDialog_button:hover {
+  scale: 1.15;
 }
 
 #closeDialog_button {
@@ -72,6 +81,7 @@ li a:hover {
   padding: 10px;
   border-radius: 12px;
 }
+
 #versao {
   font-family: "Arial", sans-serif;
   font-size: 15px;

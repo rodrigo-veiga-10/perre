@@ -13,4 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function open_dialog_server() {
+    var dialog = document.getElementById('dialog_server_info');
+    dialog.showModal();
+}
+function close_dialog_server() {
+    var dialog = document.getElementById('dialog_server_info');
+    dialog.close();
+}
 

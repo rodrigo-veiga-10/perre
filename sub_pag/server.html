@@ -11,11 +11,16 @@
     <nav class="navbar_cima">
         <a href="../index.html">Voltar</a>
     </nav>
-    <div class="container_server">
-        <h1>Servidor</h1>
-        <h2 id="ip_server"></h2>
-        <h2 id="port_server"></h2>
-        <h2 id="status_server"></h2>
-    </div>
+
+    <button id="button_server_info" onclick="open_dialog_server()">Informações sobre o servidor</button>
+
+    <dialog id="dialog_server_info">
+        <div class="container_server">
+            <h2 id="ip_server"></h2>
+            <h2 id="port_server"></h2>
+            <h2 id="status_server"></h2>
+            <button onclick="close_dialog_server()" id="closeDialog_button_server">Fechar</button>
+        </div>
+    </dialog>
 </body>
 </html>

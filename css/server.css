@@ -1,4 +1,4 @@
-.navbar_cima{
+.navbar_cima {
     background-color: #b7b7b7;
     height: 50px;
     display: flex;
@@ -13,14 +13,45 @@ a {
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
-    transition: font-size 0.5s;
-
-}
-a:hover{
-    font-size: 18px;
+    transition: scale 1s;
 }
 
-.container_server{
+a:hover {
+    scale: 1.15;
+}
+
+#dialog_server_info {
     text-align: center;
     font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+#button_server_info {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 12px;
+    transition: scale 1s;
+}
+
+#button_server_info:hover {
+    scale: 1.1;
+}
+
+#closeDialog_button_server {
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 12px;
 }
