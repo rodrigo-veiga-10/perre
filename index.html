@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +8,50 @@
     <script src="js/index.js"></script>
 </head>
 <body>
+    <!-- Dialog for the first welcome message -->
+    <dialog id="first_dialog">
+        <h1>Bem vindo ao <br> Servidor VeigaPerre</h1>
+        <button id="closeDialog_first">Fechar</button>
+    </dialog>
+
+    <!-- Navigation bar -->
     <nav class="navbar_cima">
         <ul>
             <li><img src="images/termometro.png" alt=""></li>
             <li><a href="sub_pag/config.html">Configurações</a></li>
             <li><a href="sub_pag/server.html">Server</a></li>
+            <li><a href="sub_pag/faq.html">FAQ</a></li>
         </ul>
     </nav>
+
+    <!-- Container for welcome message -->
     <div class="container_welcome">
         <h1 id="welcome_name">Bem-vindo, </h1>
+
+        <!-- Dialog for the account settings -->
         <dialog id="welcome_dialog">
-            <h1>O teu nome</h1>
+            <h1>A tua conta</h1>
             <input type="text" id="name_input" placeholder="Insere o teu nome">
             <button onclick="changeName()" id="changeName_button">Alterar Nome</button>
             <br>
             <button onclick="closeDialog_welcome()" id="closeDialog_welcome">Fechar</button>
-        </dialog>
-        
+        </dialog>    
     </div>
+
+    <!-- Container for dashboard -->
     <div class="container">
         <h1 class="dashboard"></h1>
     </div>
 
+    <!-- Button to open the dialog for version information -->
     <button onclick="openDialog()" id="openDialog_button">Versão</button>
 
+    <p id="faq_helper_txt">Precisas de ajuda? Vai para a página <a href="sub_pag/faq.html" id="faq_link">FAQ</a></p>
+
+    <!-- Dialog for version information -->
     <dialog id="versao">
-        <h2>Versão 0.2.7</h2>
-        <h4>Novidades: <br> - O teu nome aparece no dasboard</h4>
+        <h2>Versão 0.2.8</h2>
+        <h4>Novidades: <br> - Página FAQ, com as perguntas mais frequentes</h4>
         <button onclick="closeDialog()" id="closeDialog_button">Fechar</button>
     </dialog>
 </body>

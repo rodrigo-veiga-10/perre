@@ -138,4 +138,25 @@ li a:hover {
 #changeName_button:hover {
     transform: scale(1.05);
 }
+#faq_helper_txt{
+  position: fixed;
+  bottom: 15px;
+  left: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 15px;
+  border-radius: 20px;
+}
+#faq_link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: font-size 0.5s;
+}
+
+#faq_link:hover {
+  color: #b7b7b7;
+}
+
 
