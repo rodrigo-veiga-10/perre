@@ -44,15 +44,32 @@
     </div>
 
     <!-- Button to open the dialog for version information -->
-    <button onclick="openDialog()" id="openDialog_button">Versão</button>
-
-    <p id="faq_helper_txt">Precisas de ajuda? Vai para a página <a href="sub_pag/faq.html" id="faq_link">FAQ</a></p>
+    <nav class="index_navbar_bottom">
+        <p id="faq_helper_txt">Precisas de ajuda? Vai para a página <a href="sub_pag/faq.html" id="faq_link">FAQ</a></p>
+        <button onclick="openDialog()" id="openDialog_button">Versão</button>
+    </nav>
 
     <!-- Dialog for version information -->
     <dialog id="versao">
-        <h2>Versão 0.2.8</h2>
-        <h4>Novidades: <br> - Página FAQ, com as perguntas mais frequentes</h4>
-        <button onclick="closeDialog()" id="closeDialog_button">Fechar</button>
+      <h2>Selecione a versão:</h2>
+      <select id="versionSelect" onchange="showChanges()">
+        <option value="0.2.10">Versão 0.2.10</option>
+        <option value="0.2.9">Versão 0.2.9</option>
+        <option value="0.2.8">Versão 0.2.8</option>
+        <option value="0.2.7">Versão 0.2.7</option>
+        <option value="0.2.6">Versão 0.2.6</option>
+        <option value="0.2.5">Versão 0.2.5</option>
+        <option value="0.2.4">Versão 0.2.4</option>
+        <option value="0.2.3">Versão 0.2.3</option>
+        <option value="0.2.2">Versão 0.2.2</option>
+        <option value="0.2.1">Versão 0.2.1</option>
+        <option value="0.2">Versão 0.2</option>
+        <option value="0.1.1">Versão 0.1.1</option>
+        <option value="0.1">Versão 0.1</option>
+      </select>
+      <h4 id="changes"></h4>
+      <button onclick="closeDialog()" id="closeDialog_button">Fechar</button>
     </dialog>
+    
 </body>
 </html>
