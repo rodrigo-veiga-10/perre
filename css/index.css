@@ -1,3 +1,6 @@
+button {
+  border: none;
+}
 /* Navbar Styles */
 .navbar_cima {
   position:absolute;
@@ -109,6 +112,9 @@ li a:hover {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+#closeDialog_welcome{
+  background-color: #333333;
+}
 #changeName_button {
     font-family: "Arial", sans-serif;
     font-size: 12px;
@@ -164,8 +170,7 @@ li a:hover {
   color: #ffffff;
   background-color: #333333;
   padding: 10px;
-  border-color: #333333;
-  border-radius: 12px;
+  border:none;
   transition: scale 1s;
 }
 #openDialog_button:hover {

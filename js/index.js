@@ -100,6 +100,8 @@ function showChanges() {
 
 function getChangesForVersion(version) {
   const changesMap = {
+    "0.2.10.2": "Alterações no estilo do site",
+    "0.2.10.1": "Navbar de cima fica mesmo colada em cima",
     "0.2.10": "Podes selecionar a versão e ver o que aconteceu nessa versão",
     "0.2.9": "Navbar na parte de baixo do website",
     "0.2.8": "Nova página FAQ",
