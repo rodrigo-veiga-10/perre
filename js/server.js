@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const port = localStorage.getItem('porta');
     const hasError = localStorage.getItem('hasError') === 'true';
 
-    document.getElementById('ip_server').innerHTML = `<h2>Ip do servidor:</h2><p>${ip}</p>`;
+    document.getElementById('ip_server').innerHTML = `<h2>IP do servidor:</h2><p>${ip}</p>`;
     document.getElementById('port_server').innerHTML = `<h2>Porta do servidor:</h2><p>${port}</p>`;
 
     if (hasError) {
