@@ -7,3 +7,4 @@
     Index - Página inicial do site com dashboard
     Configurações - Página com configurações do site
     Server - informações sobre servidor
+    FAQ - ajuda sobre o website
