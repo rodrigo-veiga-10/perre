@@ -104,8 +104,9 @@ li a:hover {
 }
 /* Change name configuration styles */
 #name_input {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  background-color: #333333;
+  color: white;
+    margin-bottom: 20.5px;
     width: 200px;
     height: 25px;
     padding: 5px;
