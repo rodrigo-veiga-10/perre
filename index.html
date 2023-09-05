@@ -3,25 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
+    <title>Servidor VeigaPerre</title>
+    <link rel="stylesheet" href="main/index.css">
 </head>
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar_cima">
-        <ul>
-            <li><img src="images/termometro.png" alt=""></li>
-            <li><a href="sub_pag/config.html">Configurações</a></li>
-            <li><a href="sub_pag/server.html">Server</a></li>
-            <li><a href="sub_pag/faq.html">FAQ</a></li>
-        </ul>
+    <nav id="navbar_main">
+        <h2 id="main_name">Servidor Veiga Perre</h2>
     </nav>
-
-    <!-- Container for welcome message -->
     <div class="container_welcome">
         <h1 id="welcome_name">Bem-vindo, </h1>
-
         <!-- Dialog for the account settings -->
         <dialog id="welcome_dialog">
             <h1>A tua conta</h1>
@@ -31,43 +21,10 @@
             <button onclick="closeDialog_welcome()" id="closeDialog_welcome">Fechar</button>
         </dialog>    
     </div>
-
-    <!-- Container for dashboard -->
-    <div class="container">
-        <h1 class="dashboard"></h1>
+    <div class="container_sensor">
+        <img src="/main/img/Temperature.png" alt="" id="temperature_img">
+        <div class="text_img">Temperatura</div>
     </div>
-
-    <!-- Button to open the dialog for version information -->
-    <nav class="index_navbar_bottom">
-        <p id="faq_helper_txt">Precisas de ajuda? Vai para a página <a href="sub_pag/faq.html" id="faq_link">FAQ</a></p>
-        <button onclick="openDialog()" id="openDialog_button">Versão</button>
-    </nav>
-
-    <!-- Dialog for version information -->
-    <dialog id="versao">
-      <h2>Selecione a versão:</h2>
-      <select id="versionSelect" onchange="showChanges()">
-        <option value="">Nenhuma versão selecionada</option>
-        <option value="3.0">Versão 3.0</option>
-        <option value="0.2.10.2">Versão 0.2.10.2</option>
-        <option value="0.2.10.1">Versão 0.2.10.1</option>
-        <option value="0.2.10">Versão 0.2.10</option>
-        <option value="0.2.9">Versão 0.2.9</option>
-        <option value="0.2.8">Versão 0.2.8</option>
-        <option value="0.2.7">Versão 0.2.7</option>
-        <option value="0.2.6">Versão 0.2.6</option>
-        <option value="0.2.5">Versão 0.2.5</option>
-        <option value="0.2.4">Versão 0.2.4</option>
-        <option value="0.2.3">Versão 0.2.3</option>
-        <option value="0.2.2">Versão 0.2.2</option>
-        <option value="0.2.1">Versão 0.2.1</option>
-        <option value="0.2">Versão 0.2</option>
-        <option value="0.1.1">Versão 0.1.1</option>
-        <option value="0.1">Versão 0.1</option>
-      </select>
-      <h4 id="changes"></h4>
-      <button onclick="closeDialog()" id="closeDialog_button">Fechar</button>
-    </dialog>
-    
 </body>
+<script src="main/index.js"></script>
 </html>

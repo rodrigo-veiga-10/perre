@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor de Temperatura</title>
+    <link rel="stylesheet" href="../sensor_temp_css/sensor_temp.css">
+    <script src="../sensor_temp_js/sensor_temp.js"></script>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar_cima">
+        <ul>
+            <li><a href="../../../index.html" id="voltar_main">Voltar</a></li>
+            <li><img src="../sensor_temp_img/termometro.png" alt=""></li>
+            <li><a href="/sensores/sensor_temp/sensor_temp_pag/sub_pag_temp/config.html">Configurações</a></li>
+            <li><a href="/sensores/sensor_temp/sensor_temp_pag/sub_pag_temp/server.html">Server</a></li>
+            <li><a href="/sensores/sensor_temp/sensor_temp_pag/sub_pag_temp/FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Container for welcome message -->
+
+    <!-- Container for dashboard -->
+    <div class="container">
+        <h1 class="dashboard"></h1>
+    </div>
+
+    <!-- Button to open the dialog for version information -->
+    <nav class="index_navbar_bottom">
+        <p id="faq_helper_txt">Precisas de ajuda? Vai para a página <a href="/sensores/sensor_temp/sensor_temp_pag/sub_pag_temp/FAQ.html" id="faq_link">FAQ</a></p>
+        <button onclick="openDialog()" id="openDialog_button">Versão</button>
+    </nav>
+
+    <!-- Dialog for version information -->
+    <dialog id="versao">
+      <h2>Selecione a versão:</h2>
+      <select id="versionSelect" onchange="showChanges()">
+        <option value="">Nenhuma versão selecionada</option>
+        <option value="3.1">Versão 3.1</option>
+        <option value="3.0">Versão 3.0</option>
+        <option value="0.2.10.2">Versão 0.2.10.2</option>
+        <option value="0.2.10.1">Versão 0.2.10.1</option>
+        <option value="0.2.10">Versão 0.2.10</option>
+        <option value="0.2.9">Versão 0.2.9</option>
+        <option value="0.2.8">Versão 0.2.8</option>
+        <option value="0.2.7">Versão 0.2.7</option>
+        <option value="0.2.6">Versão 0.2.6</option>
+        <option value="0.2.5">Versão 0.2.5</option>
+        <option value="0.2.4">Versão 0.2.4</option>
+        <option value="0.2.3">Versão 0.2.3</option>
+        <option value="0.2.2">Versão 0.2.2</option>
+        <option value="0.2.1">Versão 0.2.1</option>
+        <option value="0.2">Versão 0.2</option>
+        <option value="0.1.1">Versão 0.1.1</option>
+        <option value="0.1">Versão 0.1</option>
+      </select>
+      <h4 id="changes"></h4>
+      <button onclick="closeDialog()" id="closeDialog_button">Fechar</button>
+    </dialog>
+  
+</body>
+</html>

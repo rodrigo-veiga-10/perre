@@ -37,59 +37,6 @@ function closeDialog() {
   console.log('Closing dialog...');
   dialog.close();
 }
-
-window.addEventListener('load', function() {
-  if (localStorage.getItem('promptShown') !== 'true') {
-    alert("Bem vindo ao Servidor PerreVeiga");
-    try {
-      localStorage.setItem('name', prompt("Para teres uma melhor experiência no website, por favor, insere o seu nome:"));
-      localStorage.setItem('promptShown', 'true');
-      alert("Podes sempre mudar o teu nome mais tarde clicando no Bem vindo, o_teu_nome");
-    } catch (error) {
-      console.error('Error occurred while accessing localStorage:', error);
-    }
-  }
-});
-
-window.addEventListener("load", function() {
-  document.getElementById("welcome_name").textContent = "Bem-vindo, " + localStorage.getItem('name');
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const h1_name = document.getElementById('welcome_name');
-  if (h1_name) {
-    h1_name.addEventListener('click', function() {
-      console.log("Opening welcome dialog...");
-      try {
-        const dialog = document.getElementById('welcome_dialog');
-        if (dialog) {
-          dialog.showModal();
-        }
-      } catch (error) {
-        console.error("Error displaying the dialog:", error);
-      }
-    });
-  } else {
-    console.warn("Element with class 'container_welcome' not found.");
-  }
-});
-
-function closeDialog_welcome() {
-  var dialog_welcome = document.getElementById('welcome_dialog');
-  console.log('Closing welcome dialog...');
-  dialog_welcome.close();
-}
-
-function changeName() {
-  var nameInput = document.getElementById('name_input');
-  var welcomeName = document.getElementById('welcome_name');
-  if (nameInput.value) {
-    localStorage.setItem('name', nameInput.value);
-    welcomeName.textContent = "Bem-vindo, " + localStorage.getItem('name');
-  }
-}
-
-
 function showChanges() {
   const versionSelect = document.getElementById("versionSelect");
   const selectedVersion = versionSelect.value;
@@ -100,6 +47,7 @@ function showChanges() {
 
 function getChangesForVersion(version) {
   const changesMap = {
+    "3.1": "MEGA ATUALIZAÇÃO na estrutura do website",
     "3.0": "Website várias funções",
     "0.2.10.2": "Alterações no estilo do site",
     "0.2.10.1": "Navbar de cima fica mesmo colada em cima",
@@ -119,4 +67,3 @@ function getChangesForVersion(version) {
   };
   return changesMap[version] || "Nenhuma informação encontrada para essa versão.";
 }
-  
