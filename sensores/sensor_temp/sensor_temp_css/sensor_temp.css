@@ -76,26 +76,6 @@ li a:hover {
   border-radius: 10px;
 }
 
-/* Buttons Styles */
-#versao {
-  font-family: "Arial", sans-serif;
-  font-size: 15px;
-  color: #ffffff;
-  background-color: #333333;
-  padding: 10px;
-  border-radius: 12px;
-}
-#closeDialog_button {
-  font-family: "Arial", sans-serif;
-  font-size: 15px;
-  color: #ffffff;
-  background-color: #333333;
-  padding: 10px;
-  border-radius: 12px;
-}
-
-
-
 #changeName_button:hover {
     transform: scale(1.05);
 }
@@ -131,18 +111,3 @@ li a:hover {
   color: #b7b7b7;
 }
 
-#openDialog_button {
-  position: absolute;
-  margin-right: 10px;
-  right: 18px;
-  font-family: "Arial", sans-serif;
-  font-size: 15px;
-  color: #ffffff;
-  background-color: #333333;
-  padding: 10px;
-  border:none;
-  transition: scale 1s;
-}
-#openDialog_button:hover {
-  scale: 1.15;
-}

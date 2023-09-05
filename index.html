@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servidor VeigaPerre</title>
-    <link rel="stylesheet" href="main/index.css">
+    <link rel="stylesheet" href="main/css/index.css">
 </head>
 <body>
     <nav id="navbar_main">
+        <a href="faq.html" class="nav_cima_link">FAQ</a>
         <h2 id="main_name">Servidor Veiga Perre</h2>
     </nav>
     <div class="container_welcome">
@@ -22,9 +23,44 @@
         </dialog>    
     </div>
     <div class="container_sensor">
-        <img src="/main/img/Temperature.png" alt="" id="temperature_img">
+        <img src="/main/img/Temperature.png" alt="" class="sensor_img">
         <div class="text_img">Temperatura</div>
     </div>
+    <div class="container_sensor">
+        <img src="/main/img/portao.webp" alt="" class="breve_img" style="height: 300px;">
+        <div class="text_img">EM BREVE</div>
+    </div>
+    <nav class="index_navbar_bottom">
+        <p id="faq_helper_txt">Precisas de ajuda? Vai para a página <a href="faq.html" id="faq_link">FAQ</a></p>
+        <button onclick="openDialog()" id="openDialog_button">Versão</button>
+    </nav>
+
+    <!-- Dialog for version information -->
+    <dialog id="versao">
+      <h2>Selecione a versão:</h2>
+      <select id="versionSelect" onchange="showChanges()">
+        <option value="">Nenhuma versão selecionada</option>
+        <option value="3.1">Versão 3.1</option>
+        <option value="3.0">Versão 3.0</option>
+        <option value="0.2.10.2">Versão 0.2.10.2</option>
+        <option value="0.2.10.1">Versão 0.2.10.1</option>
+        <option value="0.2.10">Versão 0.2.10</option>
+        <option value="0.2.9">Versão 0.2.9</option>
+        <option value="0.2.8">Versão 0.2.8</option>
+        <option value="0.2.7">Versão 0.2.7</option>
+        <option value="0.2.6">Versão 0.2.6</option>
+        <option value="0.2.5">Versão 0.2.5</option>
+        <option value="0.2.4">Versão 0.2.4</option>
+        <option value="0.2.3">Versão 0.2.3</option>
+        <option value="0.2.2">Versão 0.2.2</option>
+        <option value="0.2.1">Versão 0.2.1</option>
+        <option value="0.2">Versão 0.2</option>
+        <option value="0.1.1">Versão 0.1.1</option>
+        <option value="0.1">Versão 0.1</option>
+      </select>
+      <h4 id="changes"></h4>
+      <button onclick="closeDialog()" id="closeDialog_button">Fechar</button>
+    </dialog>
 </body>
 <script src="main/index.js"></script>
 </html>
