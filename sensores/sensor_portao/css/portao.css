@@ -1,0 +1,59 @@
+button {
+    border: none;
+  }
+  
+  #voltar_main{
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #302f2f;
+    background-color: #a2a1a1;
+    border-radius: 10px;
+    padding: 10px;
+    border:none;
+    transition: scale 1s;
+  }
+  #voltar_main:hover {
+    scale: 1.15;
+  }
+  
+  /* Navbar Styles */
+  .navbar_cima {
+    position:absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    background-color: #b7b7b7;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  li {
+    margin-left: 15px; /* Espaço entre os links */
+  }
+  
+  li img {
+    height: 40px;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: scale 1s;
+  }
+  
+  li a:hover {
+    scale: 1.15;
+  }
